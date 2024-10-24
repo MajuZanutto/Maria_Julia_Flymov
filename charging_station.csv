@@ -1,0 +1,6 @@
+Station ID,Name,Latitude,Longitude,Capacity,Status
+CS001,Central Hub,40.7128,-74.006,100,Active
+CS002,Airport Terminal,37.6183,-122.375,80,Active
+CS003,Downtown Charger,34.0522,-118.2437,60,Inactive
+CS004,University Campus,41.8781,-87.6298,120,Active
+CS005,Shopping Mall,39.7392,-104.9903,90,Active
