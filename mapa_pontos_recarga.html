@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_652d5cd52709dc015587e87a7a3fc7a0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_652d5cd52709dc015587e87a7a3fc7a0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_652d5cd52709dc015587e87a7a3fc7a0 = L.map(
+                "map_652d5cd52709dc015587e87a7a3fc7a0",
+                {
+                    center: [38.80011999999999, -101.44896],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ed1f5e39b0d8b3a187aaa04551a3c475 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_ed1f5e39b0d8b3a187aaa04551a3c475.addTo(map_652d5cd52709dc015587e87a7a3fc7a0);
+        
+    
+            var tile_layer_990318530b457ca5172239dc7e903eb0 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+            var mini_map_57cf5c11825947ef1b8d97a3c15a733b = new L.Control.MiniMap(
+                tile_layer_990318530b457ca5172239dc7e903eb0,
+                {"autoToggleDisplay": false, "centerFixed": false, "collapsedHeight": 25, "collapsedWidth": 25, "height": 150, "minimized": false, "position": "bottomright", "toggleDisplay": false, "width": 150, "zoomAnimation": false, "zoomLevelOffset": -5}
+            );
+            map_652d5cd52709dc015587e87a7a3fc7a0.addControl(mini_map_57cf5c11825947ef1b8d97a3c15a733b);
+        
+    
+            var marker_5bcb74ddaf606734dbcf5f9721a74c3d = L.marker(
+                [-23.5432, -46.6358],
+                {}
+            ).addTo(map_652d5cd52709dc015587e87a7a3fc7a0);
+        
+    
+            var icon_39fac058924752571925c4f691f57c18 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5bcb74ddaf606734dbcf5f9721a74c3d.setIcon(icon_39fac058924752571925c4f691f57c18);
+        
+    
+        var popup_29a70bf67c658fe14c5e460cacb03459 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7b999b39277889a7b346b81d17c79338 = $(`<div id="html_7b999b39277889a7b346b81d17c79338" style="width: 100.0%; height: 100.0%;"><strong>Ponto 1</strong><br>Permanência: 30 minutos<br>Duração da rota: 15 minutos</div>`)[0];
+                popup_29a70bf67c658fe14c5e460cacb03459.setContent(html_7b999b39277889a7b346b81d17c79338);
+            
+        
+
+        marker_5bcb74ddaf606734dbcf5f9721a74c3d.bindPopup(popup_29a70bf67c658fe14c5e460cacb03459)
+        ;
+
+        
+    
+    
+            var marker_a8a49ad172e0400773bda375f143acea = L.marker(
+                [-23.5678, -46.6523],
+                {}
+            ).addTo(map_652d5cd52709dc015587e87a7a3fc7a0);
+        
+    
+            var icon_274b8ee5718e4fb44ac9cc657c544e3a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a8a49ad172e0400773bda375f143acea.setIcon(icon_274b8ee5718e4fb44ac9cc657c544e3a);
+        
+    
+        var popup_37ec119164a4f7baeb30512cec1ed770 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1be2149f21904ca39516c510192138ce = $(`<div id="html_1be2149f21904ca39516c510192138ce" style="width: 100.0%; height: 100.0%;"><strong>Ponto 2</strong><br>Permanência: 45 minutos<br>Duração da rota: 20 minutos</div>`)[0];
+                popup_37ec119164a4f7baeb30512cec1ed770.setContent(html_1be2149f21904ca39516c510192138ce);
+            
+        
+
+        marker_a8a49ad172e0400773bda375f143acea.bindPopup(popup_37ec119164a4f7baeb30512cec1ed770)
+        ;
+
+        
+    
+</script>
+</html>
